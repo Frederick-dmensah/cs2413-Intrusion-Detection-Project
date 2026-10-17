@@ -1,0 +1,4 @@
+timestamp,severity,attackType,sourceIP,destinationIP,description
+2026-10-08T10:30:10Z,HIGH,BRUTE_FORCE,192.168.1.10,192.168.1.20,3 failed login attempts within 60 seconds
+2026-10-08T10:31:15Z,MEDIUM,PORT_SCAN,192.168.1.15,192.168.1.20,4 unique destination ports within 60 seconds
+2026-10-08T10:32:00Z,HIGH,HIGH_TRAFFIC,192.168.1.30,192.168.1.20,Traffic event containing 15000 bytes
