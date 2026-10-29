@@ -6,53 +6,136 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
-    color: #1e293b;
+    background: #f0f4f8;
+    color: #14213d;
 }
 
 header {
-    background-color: #0f172a;
+    background: #10192d;
     color: white;
-    padding: 30px;
     text-align: center;
+    padding: 35px 20px;
 }
 
 header h1 {
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #cbd5e1;
+    margin: 0 0 15px;
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-.welcome {
-    background-color: white;
-    padding: 35px;
+.dashboard {
+    background: white;
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: #f3f6fc;
+    border: 1px solid #dce4ef;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2459d3;
+    margin: 15px 0 0;
 }
 
 button {
-    background-color: #2563eb;
+    background: #2563eb;
     color: white;
     border: none;
-    padding: 12px 20px;
     border-radius: 6px;
+    padding: 12px 20px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 button:hover {
-    background-color: #1d4ed8;
+    background: #1d4ed8;
 }
 
 #statusMessage {
-    margin-top: 20px;
+    color: #08783d;
     font-weight: bold;
-    color: #15803d;
 }
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #dce4ef;
+    text-align: left;
+}
+
+th {
+    background: #10192d;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f3f6fc;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+.dataset-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 30px;
+}
+
+.dataset-controls label {
+    font-weight: bold;
+}
+
+.dataset-controls select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    font-size: 15px;
+}
+
